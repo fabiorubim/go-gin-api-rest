@@ -15,5 +15,5 @@ func HandleRequests() {
 	r.DELETE("/alunos/:id", controllers.DeletaAluno)
 	r.PATCH("/alunos/:id", controllers.EditaAluno)
 	r.GET("/alunos/cpf/:cpf", controllers.BuscaAlunoPorCPF)
-	r.Run(":5000")
+	r.Run("127.0.0.1:5000")
 }
